@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parámetros Psicrométicos del aire húmedo</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <!-- barra -->
+    <nav>
+        <div class="nav-wrapper blue darken-3">
+            <a id="Titulo" href="#" class="brand-logo center"> Coordenadas geográficas a UTM</a>
+            <ul class="left hide-on-med-and-down">
+                <li><a href="#"><img src="Chapingo_logo.png" alt="" width="400" height="118"></a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Departamento de ingeniería Mecánica Agrícola</a></li>
+                <a>Ingeniería Mecatrónica Agrícola</a>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col s2"></div>
+            <label class="black-text" for="first_value"><b>Longitud</b></label>
+        </div>
+        <div class="row">
+            <div class="col s2"></div>
+            <div class="input-field col s5">
+                <input placeholder="Valor" id="first_value" step="any" type="string" class="validate"
+                    value="98°53'58''W">
+            </div>
+            <div class="col s2"></div>
+            <p class="col s2"><b><i>X<sub>UTM</sub> = <output id="X_UTM"></output></i></b></p>
+        </div>
+
+        <div class="row">
+            <div class="col s2"></div>
+            <label class="black-text" for="first_value"><b>Latitud</b></label>
+        </div>
+        <div class="row">
+            <div class="col s2"></div>
+            <div class="input-field col s5">
+                <input placeholder="Valor" id="second_value" step="any" type="string" class="validate"
+                    value="19°29'01''N">
+            </div>
+            <div class="col s2"></div>
+            <p class="col s2"><b><i>Y<sub>UTM</sub> = <output id="Y_UTM"></output></i></b></p>
+        </div>
+
+        <div class="row">
+            <div class="col s5"></div>
+            <button id="boton" class="waves-effect waves-light btn col s3">Calcular</button>
+        </div>
+        <div class="row">
+            <h5>Equipo 3</h5>
+            <div class="col s4">
+                <li>Espericueta Fonseca Fernando Simón</li>
+                <li>González Sánchez Héctor</li>
+                <li>López García Francisco</li>
+                <li>Sánchez Velázquez José Guadalupe</li>
+            </div>
+        </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
